@@ -25,13 +25,14 @@ class Db_connection {
             if ($result && mysqli_num_rows($result) > 0) {
                 $row = mysqli_fetch_assoc($result);
                 echo "Entry created successfully:<br>";
-                echo "ID: " . $row['id'] . "<br>";
+                /*echo "ID: " . $row['id'] . "<br>";
                 echo "Name: " . $row['name'] . "<br>";
                 echo "Email: " . $row['email'] . "<br>";
                 echo "Interests: " . $row['interests'] . "<br>";
                 echo "Age: " . $row['age'] . "<br>";
                 echo "Gender: " . $row['gender'] . "<br>";
                 echo "Country: " . $row['country'] . "<br>";
+                */
             }
         } else {
             echo "Entry not created";
